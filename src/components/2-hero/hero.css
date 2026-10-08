@@ -1,0 +1,84 @@
+/* Hero Section Layout */
+section.hero {
+    margin-top: 3rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+section.hero .left-section {
+    flex-grow: 1;
+}
+/*Parent Avatar Styling*/
+section.hero .parent-avatar {
+    position: relative;
+    width: fit-content;
+}
+section.hero .avatar {
+    width: 88px;
+    height: 88px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid darkorange;
+    margin-right: 0.6rem;
+    padding: 2px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+section.hero .icon-true {
+    position: absolute;
+    bottom: 4px;
+    right: 10px;
+    color: var(--blue, #1d9bf0);
+    font-size: 1.25rem;
+}
+html[dir="rtl"] section.hero .icon-true {
+  right: auto;
+  left: 10px;
+}
+/* Titles */
+section.hero h1.title {
+    font-size: 2.85rem;
+    line-height: 1.2;
+    margin: 24px 0;
+    color: var(--title);
+    min-height: 3.5rem;
+}
+section.hero .typewriter-cursor {
+  display: inline-block;
+  margin-inline-start: 4px;
+  color: var(--blue);
+  font-weight: 300;
+}
+section.hero p.sub-title {
+    color: var(--subtitle);
+    font-size: 0.95rem;
+    line-height: 1.65rem;
+    margin-bottom: 32px;
+    max-width: 620px;
+}
+/* Social Icons */
+section.hero .all-icons {
+    gap: 1.5rem;
+    align-items: center;
+}
+section.hero .all-icons .icon {
+    color: var(--subtitle);
+    font-size: 1.35rem;
+    cursor: pointer;
+    display: inline-flex;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), color 0.3s ease;
+}
+section.hero .all-icons .icon:hover {
+    color: var(--icon-hover, var(--title));
+    transform: scale(1.2); 
+}
+/* Right Section */
+@media(max-width: 1250px) {
+    section.hero .right-section {
+        display: none;
+    }
+}
+@media (max-width: 600px) {
+  section.hero h1.title {
+    font-size: 2rem;
+  }
+}

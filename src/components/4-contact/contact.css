@@ -1,0 +1,125 @@
+/* Contact Section Layout */
+section.contact-us {
+  margin-block: 3rem;
+}
+
+section.contact-us h1.title {
+  font-size: 2.1rem;
+  color: var(--title);
+  gap: 0.8rem;
+  align-items: center;
+}
+
+section.contact-us .icon-envelope {
+  color: var(--subtitle);
+  font-size: 1.8rem;
+  display: flex;
+}
+
+section.contact-us p.description {
+  color: var(--subtitle);
+  font-size: 0.95rem;
+  margin-block: 0.8rem 2rem;
+  line-height: 1.65;
+}
+
+/* Container & Form Layout */
+.contact-container {
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+/* Form Styles */
+.contact-form {
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 500px;
+}
+.form-group {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  width: 100%;
+}
+.form-group label {
+  color: var(--subtitle);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+/* Inputs & Textarea */
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  background-color: var(--bg-header, rgba(255, 255, 255, 0.05));
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--title);
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.light section.contact-us #email, .light section.contact-us #message {
+    background-color: rgba(247, 247, 247, 0.534);
+    border: 1px solid rgba(128, 128, 128, 0.41);
+    color: #232324;
+}
+section.contact-us textarea {
+min-height: 11rem;
+resize: vertical;
+}
+/* Focus & Hover states */
+
+.light section.contact-us input:focus, 
+.light section.contact-us textarea:focus, 
+.light section.contact-us input:hover, 
+.light section.contact-us textarea:hover {
+    border: 1px solid rgb(65, 64, 64);
+    box-shadow: 0 0 0 2px rgba(51, 51, 51, 0.15);
+}
+/* Submit Button */
+.submit-btn {
+  background-color: var(--bg-header);
+  color: var(--title);
+  border: 1px solid var(--border);
+  padding: 0.75rem 2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover:not(:disabled) {
+  border-color: var(--blue);
+  color: var(--blue);
+  transform: translateY(-2px);
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+/* Animation Box */
+section.contact-us .animation {
+    flex: 1;
+    justify-content: center;
+    min-height: 250px;
+}
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contact-form {
+    max-width: 100%;
+  }
+
+  .contact-us .animation {
+    display: none;
+  }
+}

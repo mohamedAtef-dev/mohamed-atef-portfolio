@@ -1,0 +1,132 @@
+
+main.projects-container {
+  gap: 2.5rem;
+  align-items: flex-start;
+  margin-top: 3rem;
+}
+    /* Left Section */
+main section.left-section {
+    flex-direction: column;
+    gap: 10px;
+}
+main section.left-section button {
+    background-color: rgba(36, 37, 46, 1);
+    width: 11rem;
+    padding: 0.75rem 0;
+    text-align: center;
+    font-size: 1.05rem;
+    border-radius: 8px;
+    opacity: 0.5;
+    text-transform: capitalize;
+    transition: all 0.3s;
+}
+main section.left-section button.active {
+    opacity: 1;
+    font-size: bold;
+    letter-spacing: 0.6px;
+    padding: 0.8rem 0;
+    border: 1px solid var(--blue);
+}
+.light main section.left-section button.active {
+    border: 1px solid #000;
+}
+main section.left-section button:hover {
+    opacity: 1;
+}
+
+ /* Rigth Section */
+main  section.right-section{
+    flex-grow: 1;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px 2rem;
+}
+.card {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2), -3px 3px 3px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(93, 188, 252, 0.3);
+    border-radius: 8px;
+    transition: 0.3s;
+    background-image: linear-gradient(rgb(255 255 255 / 0%), rgb(255 255 255 / 25%));
+}
+.card:hover {
+    border: 1px solid var(--blue);
+    rotate: 1deg;
+    scale: 1.01;
+    cursor: pointer;
+    background-color: rgba(173, 160, 160, 0.212);
+}
+.light .card, .light .card:hover {
+    border: none;
+} 
+.card img {
+    border-radius: 8px;
+}
+.card .box {
+    padding: 1rem 0.4rem;
+}
+.card .box .title {
+    color: var(--title);
+    text-transform: capitalize;
+}
+.card .box .sub-title {
+    color: var(--subtitle);
+    font-size: 0.8rem;
+    margin-top: 0.7rem;
+    margin-bottom: 1.1rem;
+}
+/* Card Container Box */
+.card .box {
+  width: 266px;
+}
+/* Icons Footer Alignment */
+.card .box .icons {
+    justify-content: space-between;
+}
+.card .box .icons .action-icons {
+  gap: 11px;
+}
+.card .box .icons .icon-link, .card .box .icons .icon-github {
+    color: var(--subtitle);
+    font-size: 1.2rem;
+    display: inline-flex;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+.card .box .icons .icon-link:hover, .card .box .icons .icon-github:hover{
+    color: var(--icon-hover);
+    transform: scale(1.15);
+    cursor: pointer;
+}
+.card a.link {
+    font-size: 0.9rem;
+    color: var(--blue);
+    gap: 6px;
+    align-items: center;
+    margin-right: 12px;
+}
+.card a.link .icon-arrow-right {
+  font-size: 0.8rem;
+  transition: transform 0.2s ease;
+}
+.card a.link:hover .icon-arrow-right {
+  transform: translateX(3px); 
+}
+
+ /* Responsave Dedign */
+@media (max-width: 600px) {
+    main.flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 2.64rem;
+    }
+    main section.left-section {
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main section.left-section button {
+    width: 7rem;
+    padding: 0.8rem 0;
+    font-size: 0.9rem;
+}
+}

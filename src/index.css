@@ -1,0 +1,153 @@
+ /* 1. Imports & Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+/* 2. Theme Variables (Dark Mode by Default) */
+:root {
+  /* Colors - Dark Theme */
+  --primary: #000000;
+  --secondary: rgb(24 24 27);
+  --border: rgba(63, 63, 70, 0.4);
+  --title: rgb(244 244 245);
+  --subtitle: rgb(161 161 170);
+  --bg-Header: rgb(39, 39, 42);
+  --blue: rgb(93, 188, 252);
+  --icon-hover: #d4d4d8;
+
+  /* Layout Spacing */
+  --container-padding: 4.8rem;
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+}
+/* Light Theme Overrides */
+.light {
+  --primary: rgb(250, 250, 250);
+    --secondary: rgb(255, 255, 255);
+  --border: rgba(202, 202, 202, 0.51);
+  --title: rgb(39 39 42);
+  --subtitle: rgb(82 82 91);
+  --bg-Header: rgb(253, 253, 253);
+  --blue: rgb(0, 149, 246);
+  --icon-hover: #333333;
+}
+/* 3. Base & Reset Styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Roboto", system-ui, -apple-system, sans-serif;
+  font-optical-sizing: auto;
+  letter-spacing: 0.1px;
+  scroll-behavior: smooth;
+}
+/* Right-To-Left (RTL) Support for Arabic */
+html[dir="rtl"] {
+  font-family: 'Cairo', 'Segoe UI', Tahoma, sans-serif;
+}
+html[dir="rtl"] .icon-arrow-right {
+  transform: rotate(180deg);
+}
+body {
+  background-color: var(--primary);
+  color: #fff;
+  transition: background-color var(--transition-normal), color var(--transition-normal);
+}
+/* Typography & Interactive Resets */
+li {
+  list-style: none;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+  transition: opacity var(--transition-fast), color var(--transition-fast);
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  transition: transform var(--transition-fast), opacity var(--transition-fast);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+/* 4. Layout & Components */
+.container {
+  border: 2px solid var(--border);
+  width: 80%;
+  margin-inline: auto;
+  background-color: var(--secondary);
+  padding-inline: var(--container-padding);
+  transition: background-color var(--transition-normal), border-color var(--transition-normal);
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.divider {
+  border-bottom: 1px solid var(--border);
+  margin-block: 3rem;
+  /* استخدام الخصائص المنطقية لحساب العرض والهوامش من الطرفين تلقائياً */
+  width: calc(100% + (var(--container-padding) * 2));
+  margin-inline-start: calc(var(--container-padding) * -1);
+}
+/* Scroll To Top Button */
+.scroll2Top {
+  position: fixed;
+  bottom: 2rem;
+  right: 3%;
+  width: 2.6rem;
+  height: 2.6rem;
+  background-color: var(--blue);
+  color: #ffffff;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+/* 5. Custom Scrollbar (Dynamic Theme Aware) */
+.scroll2Top:hover {opacity: 0.9;}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 12px !important;
+  height: 12px !important;
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+  background-color: var(--secondary) !important;
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background-color: var(--blue) !important;
+  border-radius: 10px !important;
+  border: 3px solid var(--secondary) !important;
+}
+
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-hover {
+  background-color: var(--subtitle) !important;
+}
+/* 6. Media Queries (Responsive Design) */
+@media (max-width: 1000px) {
+  .container {
+    --container-padding: 1.7rem;
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 96%;
+  }
+
+  .scroll2Top {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+}

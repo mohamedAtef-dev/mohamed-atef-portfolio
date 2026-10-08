@@ -1,0 +1,37 @@
+{
+  "header": {
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Software Engineer & Front-End Developer.",
+    "subTitle": "I’m a Front-End Developer passionate about building fast, accessible, and responsive web applications. I focus on writing clean React code, crafting intuitive user interfaces, and solving real-world engineering problems."
+  },
+  "main": {
+    "all": "All Projects",
+    "css": "HTML & CSS",
+    "js": "JavaScript",
+    "bootstrap": "Bootstrap",
+    "react": "React & MUI",
+    "next": "Next.js",
+    "more": "more"
+  },
+    "contact": {
+    "Contact Us": "Contact Us",
+    "sendTitle": "Whether you have a question, a project in mind, or just want to say hello, I’d love to hear from you! Feel free to reach out through the form below or contact me directly via email.",
+"emailLabel": "Email Address:",
+    "emailPlaceholder": "your.email@example.com",
+    "yourMessage": "Your message:",
+    "messagePlaceholder": "Write Your Message",
+    "submit": "Submit",
+    "submitting": "Submitting...",
+    "successMsg": "Your message has been sent successfully! 👌"
+  },
+  "footer": {
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "rights": "MohamedAtef Portfolio. All rights reserved."
+  }
+}
