@@ -72,27 +72,35 @@ export const myProjects: Project[] = [
     githubLink: "https://github.com/mohamedAtef-dev/bondi-bootstrap-landing",
   demoLink: "https://mohamedatef-dev.github.io/bondi-bootstrap-landing/"
   },
-  {
-    id: 7,
-    projectTitle: "React ToDo App",
-    category: ["react"],
-    imgPath: "./7.jpg.png",
-    description: "A React task management app built with Redux Toolkit and Material UI, supporting task filtering, local persistence, and dark mode.",
-    descriptionAr: "تطبيق إدارة مهام بـ React مصمم باستخدام Redux Toolkit و Material UI، يدعم تصفية المهام، الحفظ المحلي، والوضع الداكن.",
-    githubLink: "https://github.com/mohamedAtef-dev/react-todo-app",
-    demoLink: "https://mohamedatef-dev.github.io/react-todo-app/"
-  },
-  /*
-    مثال لإضافة مشروع React مستقبلاً:
     {
       id: 8,
-      projectTitle: "React E-Commerce App",
+      projectTitle: "React Admin Dashboard",
       category: ["react"],
       imgPath: "./8.jpg.png",
-      description: "A React task management app built with Redux Toolkit and Material UI, supporting task filtering, local persistence, and dark mode.",
-      descriptionAr: "تطبيق إدارة مهام بـ React مصمم باستخدام Redux Toolkit و Material UI، يدعم تصفية المهام، الحفظ المحلي، والوضع الداكن.",
-      githubLink: "https://github.com/mohamedAtef-dev/project-repo-name",
-      demoLink: "https://mohamedatef-dev.github.io/HTML--ANG--CSS-TEMPLET-ONE/"
+      description: "A sleek React Admin Dashboard featuring dynamic routing, optimized form handling with React Hook Form, and responsive Material UI components.",
+      descriptionAr: "لوحة تحكم إدارية متجاوبة مبنية باستخدام React، تعتمد على مكتبة Material UI لتوفير مكونات عصرية، وتدعم التوجيه (routing) على جانب العميل، بالإضافة إلى نظام قوي للتحقق من صحة النماذج (form validation) يعتمد على حالة التطبيق (state-driven).",
+      githubLink: "https://github.com/mohamedatef-dev/admin-dashboard",
+      demoLink: "https://mohamedatef-dev.github.io/admin-dashboard/"
     },
-  */
+    {
+      id: 9,
+      projectTitle: "React E-Commerce App",
+      category: ["react"],
+      imgPath: "./9.jpg.png",
+      description: "A full-featured React E-Commerce application integrated with Strapi CMS backend, featuring dynamic product sliders powered by Swiper.js and responsive UI components.",
+      descriptionAr: "تطبيق متجر إلكتروني متكامل مبني باستخدام React ومربوط بـ Strapi CMS كلوحة تحكم خلفية، يتميز بشرائح عرض منتجات تفاعلية باستخدام Swiper.js وتصميم متجاوِب بالكامل.",
+      githubLink: "https://github.com/mohamedatef-dev/ecommerce-frontend",
+      demoLink: "https://mohamedatef-dev.github.io/ecommerce-frontend/"
+    },
+    {
+      id: 10,
+      projectTitle: "React E-Commerce store",
+      category: ["react"],
+      imgPath: "./10.jpg.png",
+      description: "An interactive React E-Commerce store fetching real-time data from DummyJSON API, enhanced with Swiper.js sliders, custom React Icons, and seamless notifications via React Hot Toast.",
+      descriptionAr: "متجر إلكتروني تفاعلي مبني بـ React يجلب البيانات الحية من DummyJSON API، مُدعم بشرائح عرض عصرية عبر Swiper.js، وأيقونات مخصصة، مع نظام إشعارات سلس باستخدام React Hot Toast.",
+      githubLink: "https://github.com/mohamedatef-dev/ecommerce-store",
+      demoLink: "https://mohamedatef-dev.github.io/ecommerce-store/"
+    },
+  //  مثال لإضافة مشروع React مستقبلاً:
 ];
