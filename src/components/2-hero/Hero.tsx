@@ -35,7 +35,7 @@ const Hero = () => {
                     <motion.img initial={{ scale: 0 }} 
                     animate={{ scale: 1 }} 
                     transition={{ duration: 3, type: "spring" }}
-                    src="./public\mohamedatef.jpg.png" className="avatar" alt="Mohamed" />
+                    src="/mohamedatef.jpg.png" className="avatar" alt="Mohamed" />
                     <BsPatchCheckFill className='icon-true'/>
                 </div>
 
